@@ -1,7 +1,7 @@
 Name: kde4-style-iaora 
 Summary: IaOra Theme for KDE4
 Version: 0.1
-Release: %mkrel 1
+Release: %mkrel 2
 Source0: ia_ora-kde4-%{version}.tar.bz2
 URL: http://www.kde-look.org/content/show.php/IaOra?content=59031
 Group: Graphical desktop/KDE
