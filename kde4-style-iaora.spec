@@ -3,7 +3,7 @@ Summary: IaOra Theme for KDE4
 Version: 0.1
 Release: %mkrel 2
 Source0: ia_ora-kde4-%{version}.tar.bz2
-URL: http://www.kde-look.org/content/show.php/IaOra?content=59031
+URL: http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/theme/ia_ora-kde4/
 Group: Graphical desktop/KDE
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License: GPL 
