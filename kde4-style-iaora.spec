@@ -1,7 +1,7 @@
 Name: kde4-style-iaora 
 Summary: IaOra Theme for KDE4
 Version: 0.1.2
-Release: %mkrel 1
+Release: %mkrel 2
 Source0: ia_ora-kde4-%{version}.tar.bz2
 URL: http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/theme/ia_ora-kde4/
 Group: Graphical desktop/KDE
@@ -44,6 +44,8 @@ Common files for IaOra in KDE4 and Qt4
 %files common
 %{_kde_appsdir}/color-schemes/
 %{_kde_appsdir}/kstyle/themes/
+# remove the config for now
+%exclude %{_kde_libdir}/kde4/kwin*config.so
 
 #--------------------------------------------------------------------------------
 
@@ -60,8 +62,6 @@ pushd build
 %makeinstall_std
 popd
 
-# remove the config for now
-rm -f %{buildroot}%{_kde_libdir}/kde4/kwin*config.so
 
 %clean 
 rm -rf $RPM_BUILD_ROOT 
