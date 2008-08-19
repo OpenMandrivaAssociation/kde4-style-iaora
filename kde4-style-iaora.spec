@@ -1,6 +1,6 @@
 Name: kde4-style-iaora 
 Summary: IaOra Theme for KDE4
-Version: 0.1.1
+Version: 0.1.2
 Release: %mkrel 1
 Source0: ia_ora-kde4-%{version}.tar.bz2
 URL: http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/theme/ia_ora-kde4/
@@ -16,6 +16,8 @@ IaOra theme for KDE 4
 
 %files 
 %{_kde_plugindir}/styles/*
+%{_kde_libdir}/kde4/kwin3_iaora.so
+%{_kde_appsdir}/kwin/iaora.desktop
 
 #--------------------------------------------------------------------------------
 
@@ -57,6 +59,9 @@ rm -rf $RPM_BUILD_ROOT
 pushd build
 %makeinstall_std
 popd
+
+# remove the config for now
+rm -f %{buildroot}%{_kde_libdir}/kde4/kwin*config.so
 
 %clean 
 rm -rf $RPM_BUILD_ROOT 
