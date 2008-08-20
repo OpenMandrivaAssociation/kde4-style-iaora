@@ -1,6 +1,6 @@
 Name: kde4-style-iaora 
 Summary: IaOra Theme for KDE4
-Version: 0.1.3
+Version: 0.1.4
 Release: %mkrel 1
 Source0: ia_ora-kde4-%{version}.tar.bz2
 URL: http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/theme/ia_ora-kde4/
