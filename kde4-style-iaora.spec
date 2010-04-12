@@ -1,6 +1,6 @@
 Name: kde4-style-iaora 
 Summary: IaOra Theme for KDE4
-Version: 0.2.5.6
+Version: 0.3.0
 Release: %mkrel 1
 Source0: ia_ora-kde4-%{version}.tar.bz2
 Patch0: kde4-style-iaora-nodebug.patch
