@@ -16,10 +16,10 @@ Obsoletes:	ia_ora-kde < 1.0.8-14
 IaOra theme for KDE 4
 
 %files 
-%{_kde_plugindir}/styles/*
-%{_kde_libdir}/kde4/kwin3_iaora.so
-%{_kde_appsdir}/kwin/iaora.desktop
-%{_kde_libdir}/kde4/kwin_iaora_config.so
+%{_libdir}/kde4/plugins/styles/*
+%{_libdir}/kde4/kwin3_iaora.so
+%{_datadir}/apps/kwin/iaora.desktop
+%{_libdir}/kde4/kwin_iaora_config.so
 
 #--------------------------------------------------------------------------------
 %package -n qt4-style-iaora
@@ -31,7 +31,7 @@ Requires:	kde4-style-iaora-common
 IaOra theme for Qt4
 
 %files -n qt4-style-iaora
-%{qt4plugins}/styles/libiaora-qt.so
+%{_qt4_plugindir}/styles/libiaora-qt.so
 
 #--------------------------------------------------------------------------------
 %package common
@@ -42,20 +42,18 @@ Group:		Graphical desktop/KDE
 Common files for IaOra in KDE4 and Qt4
 
 %files common
-%{_kde_appsdir}/color-schemes/
-%{_kde_appsdir}/kstyle/themes/
 %{_sysconfdir}/iaoracolors
+%{_datadir}/apps/color-schemes/
+%{_datadir}/kstyle/themes/
 
 #--------------------------------------------------------------------------------
 %prep 
 %setup -qn ia_ora-kde4
 
 %build 
-%cmake_kde4 
+%cmake
 %make
 
 %install
 rm -rf %{buildroot}
 %makeinstall_std -C build
-
-
