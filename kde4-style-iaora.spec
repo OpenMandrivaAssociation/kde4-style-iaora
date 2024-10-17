@@ -4,7 +4,7 @@ Group:		Graphical desktop/KDE
 Version:	0.3.2
 Release:	2
 License:	GPL 
-URL:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/theme/ia_ora-kde4/
+URL:		https://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/theme/ia_ora-kde4/
 Source0:	ia_ora-kde4-%{version}.tar.xz
 BuildRequires:	kdelibs4-devel
 BuildRequires:	kdebase4-workspace-devel
